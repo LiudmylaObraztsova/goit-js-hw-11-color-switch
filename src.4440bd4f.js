@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var t=n(require("./colors")),e=n(require("./random-integer"));function n(t){return t&&t.__esModule?t:{default:t}}console.log("colors[1] :>> ",t.default[1]);const r={startBtn:document.querySelector('[data-action="start"]'),stopBtn:document.querySelector('[data-action="start"]'),body:document.querySelector("body")};let o=null;const s=()=>r.body.style.backgroundColor=t.default[(0,e.default)(0,t.default.length-1)];function a(){r.startBtn.disabled=!0,r.stopBtn.disabled=!1,o=setInterval(s,1e3)}function d(){r.startBtn.disabled=!1,r.stopBtn.disabled=!0,clearInterval(o)}r.startBtn.addEventListener("click",a),r.stopBtn.addEventListener("click",d);
 },{"./sass/main.scss":"clu1","./colors":"CE5M","./random-integer":"hEAg"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.4440bd4f.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.4440bd4f.js.map
