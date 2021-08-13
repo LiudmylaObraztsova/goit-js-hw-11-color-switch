@@ -8,13 +8,14 @@ console.log('colors[1] :>> ', colors[1]);
 
 const refs = {
     startBtn: document.querySelector('[data-action="start"]'),
-    stopBtn: document.querySelector('[data-action="start"]'),
+    stopBtn: document.querySelector('[data-action="stop"]'),
     body: document.querySelector('body'),
 }
 let changeColorId=null;
 
 const newRandomColor = () =>
     refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
+   
     
 
 
